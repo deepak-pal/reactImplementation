@@ -4,10 +4,6 @@ const Pet = ( {name, animal, breed})  => {
      React.createElement("h2", {}, animal),
       React.createElement("h2", {},breed) ]);
   };
-
-
-
-
 const App = ( )  => {
     return React.createElement("div", {},[React.createElement("h1", {}, "Adopt Me! "),  React.createElement(Pet, {name:"Luna", animal:"Dog", breed: "Havnes"}),
      React.createElement(Pet, {name:"Pepper ", animal:"Bird", breed: "Tannes"}) ]);
