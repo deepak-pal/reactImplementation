@@ -4,8 +4,11 @@
   "description": "\"Adopt me is project for pet adoption\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier  src/App.js  --write "
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
 }
