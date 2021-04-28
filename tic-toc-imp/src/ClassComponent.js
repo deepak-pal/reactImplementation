@@ -1,9 +1,16 @@
 import React from "react";
 import {render} from "react-dom";
-class Car extends React.Component {
-    render(){
-        return <h2>Sample Componet</h2>;
-    }
-}
 
-render(<Car/>, document.getElementById("root"));
+function Tick(){
+    const element = <div>
+        <h1>Hello world</h1>
+        <h2>
+            It is {new Date().toLocaleTimeString()}.
+        </h2>
+    </div>
+
+    render(element, document.getElementById("root"));
+
+};
+
+setInterval(Tick, 1000);
