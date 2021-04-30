@@ -1,9 +1,8 @@
-import userInfo from "./UserInfo"
 function Comment(props){
     return (
         <div className="comment">
-            <userInfo >{props.name}</userInfo>
-            <div className="commentText"></div>
+            <UserInfo name = {props.name}></UserInfo>
+            <CommentArea></CommentArea>
              <div className="commentDate"></div>
         </div>
     )
